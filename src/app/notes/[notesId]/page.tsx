@@ -11,7 +11,7 @@ export const generateMetadata =  ({params}:Props
             title : `Notes ${params.notesId}`
         }
 }
-export default function Notes ({params}:{params :{notesId :string}}) {
+export default function Notes ({params}:Props) {
     if (parseInt(params.notesId) > 100) {
         notFound();
     }
